@@ -3,19 +3,19 @@ angular.module('oblique', ['ionic'])
 .controller('ObliqueCtrl', function($scope){
   // a list of all ideas
   $scope.ideas = [
-    { text: 'idea 1' },
-    { text: 'idea 2' },
-    { text: 'idea 3' },
-    { text: 'idea 4' }
+    { text: 'Keep calm and flip!' },
+    { text: 'Eat a banana!' },
+    { text: 'Go and do some excercise!' },
+    { text: 'Close your eyes!' }
   ];
 
   // a random idea to show
   $scope.randomIdeas = $scope.ideas[Math.floor(Math.random() * $scope.ideas.length)];
 
   // reload UI
-          $scope.reload = function() {
-            $state.reload();
-          };
+  $scope.reload = function() {
+    $state.reload();
+  };
 
 
 })
